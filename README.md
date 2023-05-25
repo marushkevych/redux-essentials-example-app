@@ -12,6 +12,12 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 > You can work around this by setting a `NODE_OPTIONS=--openssl-legacy-provider` environment variable before starting the dev server.
 > Details: https://github.com/webpack/webpack/issues/14532#issuecomment-947012063
 
+## Install
+To force public npm registry run:
+
+### `npm install --reg https://registry.npmjs.org/`
+
+
 ## Available Scripts
 
 In the project directory, you can run:
