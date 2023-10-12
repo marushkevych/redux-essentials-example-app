@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { postAdded } from './postsSlice'
+import { addNewPost } from './postsSlice'
 
 export const AddPostForm = () => {
   const dispatch = useDispatch()
@@ -15,7 +15,7 @@ export const AddPostForm = () => {
 
   const onSavePostClicked = () => {
     if (title && content) {
-      dispatch(postAdded(title, content, userId))
+      dispatch(addNewPost({ title, content, user: userId }))
       setTitle('')
       setContent('')
       setUserId('')
